@@ -1,5 +1,6 @@
 
 @import 'blocks/menu';
+@import 'blocks/forms';
 
 * {
     font-family: SourceSansPro, sans-serif;
@@ -100,41 +101,6 @@
                         width: 655px;
                         text-align: center;
                         margin-bottom: 34px;
-                    }
-                    form {
-                        width: 640px;
-                        height: 80px;
-                        background-color: #fff;
-                        border: solid 2px #090b37;
-                        border-radius: 200px;
-                        box-shadow: 1px 1px 0 0 #090b37;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        button {
-                            border: none;
-                            border-radius: 35px;
-                            margin-top: 5px;
-                        }
-                        #candidate {
-                            border: none;
-                            text-decoration: underline;
-                            color: lightgray;
-                            font-size: 17px;
-                            margin-left: 37px;
-                            width: 70%;
-                        }
-                        #push {
-                            width: 120px;
-                            height: 64px;
-                            background-color:#090b37;
-                            border-radius: 35px;
-                        }
-                        object {
-                            position: absolute;
-                            left: 1323px;
-                            margin-top: 20px;
-                        }
                     }
                     &-notifications {
                         display: flex;

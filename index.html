@@ -26,7 +26,7 @@
                     <div class="menu__join-arrow">
                         <object data="icons/arrow-right-thin.svg" type="image/svg+xml"></object>
                     </div>
-                    <form action="input-emails.php" class="menu__join-form">
+                    <form action="input-emails.php" class="form">
                         <div class="label" for="email"></div>
                         <input type="text" id="email" placeholder="Your@email.com">
                     </form>
@@ -72,11 +72,10 @@
                             <div class="promo-block-main-subheader">
                                 Learn advanced design tactics with hands-on lessons delivered directly inside of Figma
                             </div>
-                            <form onsubmit="alert('submit!');return false">
+                            <form onsubmit="alert('submit!');return false" class="form form_big">
                                 <input type="text" id="candidate" placeholder="Your@email.com">
                                 <button>
-                                    <input type="submit" value="" id="push">
-                                    <object data="icons/white_arrow.svg" type="image/svg+xml" width="26px" height="22px"></object>
+                                    <img src="icons/arrow_right_button.svg">
                                 </button>
                             </form>
                             <div class="promo-block-main-notifications">
@@ -245,11 +244,10 @@
                 Currently there are ~500 designers learning together in Figma.
                 Enter your email below if you'd like to join them 👇
             </div>
-            <form onsubmit="alert('submit!');return false">
+            <form onsubmit="alert('submit!');return false" class="form form_big">
                 <input type="text" id="candidate-another" placeholder="Your@email.com">
                 <button>
-                    <input type="submit" value="" id="push">
-                    <object data="icons/white_arrow.svg" type="image/svg+xml" width="26px" height="22px"></object>
+                    <img src="icons/arrow_right_button.svg" alt="submit button">
                 </button>
             </form>
             <div class="notify-links">

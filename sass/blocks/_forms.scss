@@ -1,0 +1,43 @@
+
+.form {
+    margin-top: 12px;
+    width: 400px;
+    height: 56px;
+    border: solid 2px #090b37;
+    box-shadow: 1px 1px 0 0 #090b37;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    input {
+        width: 325px;
+        margin-left: 21px;
+        text-decoration: underline;
+        color: lightgray;
+        border: none;
+        font-size: 17px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &_big {
+        width: 640px;
+        height: 80px;
+        background-color: #fff;
+        border: solid 2px #090b37;
+        border-radius: 200px;
+        box-shadow: 1px 1px 0 0 #090b37;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        button {
+            border: none;
+            border-radius: 35px;
+            width: 120px;
+            height: 64px;
+            background-color: #090b37;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
