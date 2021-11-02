@@ -1,72 +1,15 @@
+
+@import 'blocks/menu';
+
 * {
     font-family: SourceSansPro, sans-serif;
 }
 
-.menu {
-    height: 80px;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    &-fixed {
-        display: flex;
-        justify-content: space-between;
-        &-cursor {
-            background: url('../icons/cursor_pink.svg') center center/cover no-repeat;
-            width: 27px;
-            height: 32px;
-            margin-top: 20px;
-        }
-        &-join {
-            display: flex;
-            min-width: 550px;
-            justify-content: space-around;
-            &-text {
-                margin-top: 27px;
-                font-size: 20px;
-            }
-            &-arrow {
-                margin-top: 33px;
-            }
-            &-form {
-                margin-top: 12px;
-                width: 400px;
-                height: 56px;
-                border: solid 2px #090b37;
-                box-shadow: 1px 1px 0 0 #090b37;
-                border-radius: 200px;
-                display: flex;
-                align-items: center;
-                input {
-                    width: 325px;
-                    margin-left: 21px;
-                    text-decoration: underline;
-                    color: lightgray;
-                    border: none;
-                    font-size: 17px;
-                }
-            }
-            
-        }
-    }
-    &-logo {
-        position: absolute;
-        top: 47px;
-        left: 434px;
-        width: 156px;
-        height: 40px;
-        border: solid 3px #090b37;
-        background-color: #dc7774;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 700;
-        box-shadow: 6px 5px #090b37;
-    }
+.container {
+    width: 60%;
+    margin: 0 auto;
 }
+
 
 .register {
     .promo {
