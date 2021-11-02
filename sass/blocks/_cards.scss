@@ -1,0 +1,35 @@
+.card {
+    height: 444px;
+    width: 335px;
+    border: solid 3px #465b43;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: white;
+    padding: 30px;
+    // &__icon, &__text, &__maintext {
+    //     margin-left: 50px;
+    // }
+    &__text, &-maintext {
+        width: 100%;
+        color: #465b43;
+        padding-top: 30px;
+    }
+    &__icon {
+        margin-top: 50px;
+        width: 40px; 
+        height: 32px;
+        margin-bottom: 22px;
+    }
+    &__maintext {
+        font-size: 28px;
+        margin-bottom: 16px;
+        padding-top: 20px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .icon1 { background: url('../img/icon_adv1.png') center center/cover no-repeat;}
+    .icon2 { background: url('../img/icon_adv2.png') center center/cover no-repeat;}
+    .icon3 { background: url('../img/icon_adv3.png') center center/cover no-repeat;}
+}

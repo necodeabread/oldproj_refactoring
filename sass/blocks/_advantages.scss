@@ -1,0 +1,68 @@
+.advantages {
+    min-height: 950px;
+    position: relative;
+    margin-top: 158px;
+    &__bg {
+        clip-path: polygon(0 0, 100% 23%, 100% 99%, 0 77%);
+        background-color: #e9f7e2;
+        height: 150%;
+        width: 100%;
+        position: absolute;
+        top: -450px;
+        left: 0;
+        z-index: -1;
+    }
+    &__wrapper-palette {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__upheader {
+        font-size: 20px;
+        color: #465b43;
+        margin-bottom: 8px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    &__header {
+        width: 663px;
+        font-size: 48px;
+        color: #465b43;
+        margin-bottom: 35px;
+    }
+    &__subheader {
+        height: 94px;
+        width: 697px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        &-pointer {
+            width: 73px;
+            height: 64px;
+            background: url('../img/pointer.png') center center/cover no-repeat;
+        }
+        &-text {
+            width: 600px;
+            font-size: 22px;
+            color: #465b43;
+            margin-top: 30px;
+            margin-left: 24px;
+        }
+    }
+    &__palette {
+        .square {
+            height: 452px;
+            width: 371px;
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                height: 16px;
+                width: 16px;
+                border: 3px solid #465b43;
+                margin-top: -12px;
+                margin-left: -8px;
+                z-index: 3;
+                background-color: white;
+            }
+        }
+    }
+}

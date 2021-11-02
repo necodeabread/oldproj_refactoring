@@ -41,7 +41,8 @@
         </div>
     </div>
 
-    <section class="register">
+    <div class="register">
+        <!--this section is an attemp of reproducing vector bg using html and css-->
         <div class="container">
             <div class="promo">
                 <div class="promo-circle"></div>
@@ -78,9 +79,9 @@
                                     <img src="icons/arrow_right_button.svg">
                                 </button>
                             </form>
-                            <div class="promo-block-main-notifications">
-                                <div class="promo-block-main-notifications-pointer"></div>
-                                <div class="promo-block-main-notifications-text">Get notified when enrollment opens again.</div>
+                            <div class="promo-notifications">
+                                <div class="promo-notifications-pointer inactive"></div>
+                                <div class="promo-notifications-text">Get notified when enrollment opens again.</div>
                             </div>
                         </div>
                         <div class="promo-block-lower2">
@@ -90,76 +91,73 @@
                 </div>
             </div>
         </div>
-
-    </section>
+    </div>
 
     
-    <section class="advantages">
-        <div class="advantages-bg"></div>
+    <div class="advantages">
+        <div class="advantages__bg"></div>
         <div class="container">
-            <div class="advantages-upheader">
+            <div class="advantages__upheader">
                 How it works
             </div>
-            <div class="advantages-header">
+            <div class="advantages__header">
                 Figma Academy is an all-new program focusing on the most practical elements of design
             </div>
-            <div class="advantages-subheader">
+            <div class="advantages__subheader">
                 <div class="advantages-subheader-pointer"></div>
                 <div class="advantages-subheader-text">
                     We'll take you beyond the theory and help you develop the skills you'll use every day as a product designer
                 </div>
             </div>
-            <div class="advantages-palette">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="square">
-                            <div class="advantages-palette-card">
-                                <div class="advantages-palette-card-icon icon1"></div>
-                                <div class="advantages-palette-card-maintxt">
-                                    Learn through hands-on lessons right inside of Figma
-                                </div>
-                                <div class="advantages-palette-card-txt">
-                                    Practice advanced tactics like building scalable variants, 
-                                    using layout templates, mastering interactive components, 
-                                    streamlining your workflow, and more...
-                                </div>
+            <div class="advantages__wrapper-palette">
+                <div class="advantages__palette">
+                    <div class="square">
+                        <div class="card">
+                            <div class="card__icon icon1"></div>
+                            <div class="card__maintext">
+                                Learn through hands-on lessons right inside of Figma
+                            </div>
+                            <div class="card__text">
+                                Practice advanced tactics like building scalable variants, 
+                                using layout templates, mastering interactive components, 
+                                streamlining your workflow, and more...
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="square">
-                            <div class="advantages-palette-card">
-                                <div class="advantages-palette-card-icon icon2"></div>
-                                <div class="advantages-palette-card-maintxt">
-                                    Level up your skillset and take the next step in your career
-                                </div>
-                                <div class="advantages-palette-card-txt">
-                                    We take you from 0 to 1 in the design process—building out a style 
-                                    system, creating all types of components, organizing your designs, 
-                                    all the way through advanced prototyping.
-                                </div>
+                </div>
+                <div class="advantages__palette">
+                    <div class="square">
+                        <div class="card">
+                            <div class="card__icon icon2"></div>
+                            <div class="card__maintext">
+                                Level up your skillset and take the next step in your career
+                            </div>
+                            <div class="card__text">
+                                We take you from 0 to 1 in the design process—building out a style 
+                                system, creating all types of components, organizing your designs, 
+                                all the way through advanced prototyping.
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="square">
-                            <div class="advantages-palette-card">
-                                <div class="advantages-palette-card-icon icon3"></div>
-                                <div class="advantages-palette-card-maintxt">
-                                    Become your engineering team's favorite designer
-                                </div>
-                                <div class="advantages-palette-card-txt">
-                                    Figma Academy teaches you how to think like a developer, 
-                                    how to better communicate your designs, and how to set 
-                                    developers up for success.
-                                </div>
+                </div>
+                <div class="advantages__palette">
+                    <div class="square">
+                        <div class="card">
+                            <div class="card__icon icon3"></div>
+                            <div class="card__maintext">
+                                Become your engineering team's favorite designer
+                            </div>
+                            <div class="card__text">
+                                Figma Academy teaches you how to think like a developer, 
+                                how to better communicate your designs, and how to set 
+                                developers up for success.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="learning">
         <div class="learnbg">
@@ -262,5 +260,7 @@
             <div class="notify-subcreated">(not affiliated with Figma)</div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
