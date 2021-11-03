@@ -3,8 +3,8 @@
     margin-top: 12px;
     width: 400px;
     height: 56px;
-    border: solid 2px #090b37;
-    box-shadow: 1px 1px 0 0 #090b37;
+    border: solid 2px $main-color;
+    box-shadow: 1px 1px 0 0 $main-color;
     border-radius: 200px;
     display: flex;
     align-items: center;
@@ -23,9 +23,9 @@
         width: 640px;
         height: 80px;
         background-color: #fff;
-        border: solid 2px #090b37;
+        border: solid 2px $main-color;
         border-radius: 200px;
-        box-shadow: 1px 1px 0 0 #090b37;
+        box-shadow: 1px 1px 0 0 $main-color;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -34,7 +34,7 @@
             border-radius: 35px;
             width: 120px;
             height: 64px;
-            background-color: #090b37;
+            background-color: $main-color;
             &:hover {
                 cursor: pointer;
             }

@@ -1,0 +1,57 @@
+.creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__block {
+        width: 700px;
+        height: 544px;
+        border-radius: 18px;
+        border: solid 3px #090b37;
+        background-color: #EFF1FD;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+    &__upper {
+        padding: 50px 83px 31px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__photo {
+        background: url('../img/author_red.png') center center/cover no-repeat;
+        width: 120px;
+        height: 120px;
+    }
+    &__twitter {
+        width: 60px;
+        height: 60px;
+        background: url('../icons/twttr_icon.svg') center center/cover no-repeat;
+        border: none;
+    }
+    &__header {
+        margin-bottom: 14px;
+        font-size: 20px;
+        color: #3c2b84;
+        font-weight: 700;
+    }
+    &__descr {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 35px;
+    }
+    &__additional {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 35px;
+    }
+    &_trusted {
+        font-size: 14px;
+        color: $main-color;
+        background-color: white;
+        border-radius: 200px;
+        width: 210px;
+        text-align: center;
+        height: 50px;
+        line-height: 35px;
+        padding-top: 15px;
+    }
+}
