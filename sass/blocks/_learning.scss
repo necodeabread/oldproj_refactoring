@@ -67,12 +67,24 @@
                 height: 344px;
             }
         }
-        &-card#design { box-shadow: 6px 6px 0 0 #7c1d19; border: solid 2px #7c1d19; background-color: #f4a59f;z-index: 6; margin-left: 0; margin-top: 0; color: #7c1d19;}
-        &-card#practical {  box-shadow: 6px 6px 0 0 #6c1a45; border: solid 2px #6c1a45; background-color: #e284a0; z-index: 5; margin-left: 154px; margin-top: 32px; color: #6c1a45;}
-        &-card#responsive { box-shadow: 6px 6px 0 0 #945219; border: solid 2px #7c1d19; background-color: #f2ba89; z-index: 4; margin-left: 308px; margin-top: 64px; color: #945219;}
-        &-card#handoff { box-shadow: 6px 6px 0 0 #465b43; border: solid 2px #465b43; background-color: #cdeec8; z-index: 3; margin-left: 462px; margin-top: 96px; color: #465b43;}
-        &-card#prototyping { box-shadow: 6px 6px 0 0 #3c2b84; border: solid 2px #3c2b84; background-color: #bbbffb; z-index: 2; margin-left: 616px; margin-top: 128px; color: #3c2b84;}
-        &-card#workflow { box-shadow: 6px 6px 0 0 #090b37; border: solid 2px #090b37; background-color: #e8e9f1; z-index: 1; margin-left: 770px; margin-top: 160px; color: #090b37;}
+        &-card#design { 
+            @include design-card($x: 0, $y: 0);
+        }
+        &-card#practical {  
+            @include practical-card($x: 1, $y: 1);
+        }
+        &-card#responsive { 
+            @include responsive-card($x: 2, $y: 2);
+        }
+        &-card#handoff { 
+            @include handoff-card($x: 3, $y: 3);
+        }
+        &-card#prototyping { 
+            @include prototyping-card($x: 4, $y: 4);
+        }
+        &-card#workflow { 
+            @include workflow-card($x: 5, $y: 5);
+        }
         
     }
     &__quote {
@@ -99,6 +111,134 @@
                 width: 52px;
                 height: 42px;
                 background: url('../img/author.png') center center/cover no-repeat;
+            }
+        }
+    }
+}
+
+@media( max-width: 1400px) {
+    .learning {
+        .learnbg {
+            height: 140vh;
+        }
+        &__slider {
+            &-card#design { 
+                @include design-card($x: 1.5, $y: 0);
+            }
+            &-card#practical {  
+                @include practical-card($x: 2.5, $y: 1);
+            }
+            &-card#responsive { 
+                @include responsive-card($x: 3.5, $y: 2);
+            }
+
+            &-card#handoff { 
+                @include handoff-card($x: 1.5, $y: 16);
+            }
+            &-card#prototyping { 
+                @include prototyping-card($x: 2.5, $y: 17);
+            }
+            &-card#workflow {
+                @include workflow-card($x: 3.5, $y: 18);
+            }
+        }
+        &__quote {
+            margin-top: 1000px;
+        }
+    }
+}
+
+@media( max-width: 1200px) {
+    .learning {
+        .learnbg {
+            height: 170vh;
+        }
+        &__slider {
+            &-card#design { 
+                @include design-card($x: 0.75, $y: 0);
+            }
+            &-card#practical {  
+                @include practical-card($x: 1.75, $y: 1);
+            }
+            &-card#responsive { 
+                @include responsive-card($x: 2.75, $y: 2);
+            }
+
+            &-card#handoff { 
+                @include handoff-card($x: 0.75, $y: 16);
+            }
+            &-card#prototyping { 
+                @include prototyping-card($x: 1.75, $y: 17);
+            }
+            &-card#workflow {
+                @include workflow-card($x: 2.75, $y: 18);
+            }
+        }
+    }
+}
+
+@media( max-width: 992px ) {
+    .learning {
+        .learnbg {
+            height: 220vh;
+        }
+        &__slider {
+            &-card#design { 
+                @include design-card($x: 0.25, $y: 0);
+            }
+            &-card#practical {  
+                @include practical-card($x: 1.25, $y: 1);
+            }
+            &-card#responsive { 
+                @include responsive-card($x: 2.25, $y: 2);
+            }
+    
+            &-card#handoff { 
+                @include handoff-card($x: 0.25, $y: 16);
+            }
+            &-card#prototyping { 
+                @include prototyping-card($x: 1.25, $y: 17);
+            }
+            &-card#workflow {
+                @include workflow-card($x: 2.25, $y: 18);
+            }
+        }
+    }
+}
+
+@media( max-width: 768px ) {
+    .learning {
+        &__text {
+            width: 100%;
+            &__descr {
+                font-size: 28px;
+            }
+        }
+        &__slider {
+            &-card#design { 
+                @include design-card($x: 0.8, $y: 0);
+                z-index: 1;
+            }
+            &-card#practical {  
+                @include practical-card($x: 0.8, $y: 3);
+                z-index: 2;
+            }
+            &-card#responsive { 
+                @include responsive-card($x: 0.8, $y: 6);
+                z-index: 3;
+            }
+    
+            &-card#handoff { 
+                @include handoff-card($x: 0.8, $y: 9);
+                z-index: 4;
+            }
+            &-card#prototyping { 
+                @include prototyping-card($x: 0.8, $y: 12);
+                z-index: 5;
+            }
+            &-card#workflow {
+                @include workflow-card($x: 0.8, $y: 15);
+                z-index: 6;
             }
         }
     }

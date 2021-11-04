@@ -1,0 +1,13 @@
+@keyframes pointer-glimpse {
+    from {
+        color: $main-color;
+    }
+    50% {
+        color: #F90BAA;
+        transform: scale(1.05);
+    }
+    to {
+        color: $main-color;
+        transform: scale(1.0);
+    }
+}

@@ -1,6 +1,7 @@
 .card {
     height: 444px;
-    width: 335px;
+    width: 100%;
+    box-sizing: border-box;
     border: solid 3px #465b43;
     margin: 0 auto;
     z-index: 2;
@@ -12,24 +13,64 @@
     &__text, &-maintext {
         width: 100%;
         color: #465b43;
-        padding-top: 30px;
+        padding-top: 10px;
     }
     &__icon {
-        margin-top: 50px;
+        margin-top: 25px;
         width: 40px; 
         height: 32px;
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
     &__maintext {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 16px;
-        padding-top: 20px;
+
     }
     &__text {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
     }
     .icon1 { background: url('../img/icon_adv1.png') center center/cover no-repeat;}
     .icon2 { background: url('../img/icon_adv2.png') center center/cover no-repeat;}
     .icon3 { background: url('../img/icon_adv3.png') center center/cover no-repeat;}
+}
+
+@media( max-width: 1200px) {
+    .card {
+        &__maintext {
+            font-size: 22px;
+        }
+        &__text {
+            line-height: 24px;
+        }
+    }
+}
+
+@media( max-width: 992px) {
+    .card {
+        &__maintext {
+            font-size: 25px;
+        }
+        &__text {
+            font-size: 21px;
+        }
+    }
+}
+
+@media( max-width: 768px) {
+    .card {
+        height: 600px;
+        &__icon {
+            width: 70px;
+            height: 55px;
+        }
+        &__maintext {
+            font-size: 36px;
+            padding-bottom: 30px;
+        }
+        &__text {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
 }

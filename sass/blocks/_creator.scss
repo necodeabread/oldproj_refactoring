@@ -55,3 +55,54 @@
         padding-top: 15px;
     }
 }
+
+@media( max-width: 992px) {
+    .creator {
+        &__descr {
+            width: 650px;
+            font-size: 22px;
+        }
+        &__additional {
+            font-size: 22px;
+        }
+        &_trusted {
+            font-size: 16px;
+            width: 240px;
+            height: 60px;   
+        }
+    }
+}
+
+@media( max-width: 768px) {
+    .creator {
+        &__block {
+            width: 576px;
+            height: 750px;
+        }
+        &__photo {
+            width: 150px;
+            height: 150px;
+        }
+        &__twitter {
+            width: 90px;
+            height: 90px;
+        }
+        &__header {
+            font-size: 32px;
+        }
+        &__descr {
+            width: 90%;
+            font-size: 28px;
+        }
+        &__additional {
+            width: 95%;
+            font-size: 28px;
+        }
+        &_trusted {
+            width: 280px;
+            height: 70px;
+            font-size: 20px;
+            line-height: 50px;
+        }
+    }
+}

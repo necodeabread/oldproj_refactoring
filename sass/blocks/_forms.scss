@@ -14,7 +14,7 @@
         text-decoration: underline;
         color: lightgray;
         border: none;
-        font-size: 17px;
+        font-size: 18px;
         &:focus {
             outline: none;
         }
@@ -38,6 +38,33 @@
             &:hover {
                 cursor: pointer;
             }
+        }
+    }
+}
+
+@media( max-width: 992px ) {
+    .form {
+        width: 303px;
+        &_big {
+            width: 512px;
+        }
+        input {
+            width: 280px;
+        }
+    }
+}
+
+@media( max-width: 768px) {
+    .form {
+        width: 270px;
+        &_big {
+            width: 512px;
+        }
+        input {
+            width: 240px;
+        }
+        &_desktop {
+            display: none;
         }
     }
 }

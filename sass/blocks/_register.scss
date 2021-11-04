@@ -12,7 +12,7 @@
             height: 82px;
             border: solid 3px $main-color;
             top: 205px;
-            left: 70%;
+            left: 80%;
             border-radius: 50%;
         }
         &-upper1 {
@@ -38,7 +38,7 @@
             &-upperblock {
                 display: flex;
                 &-first {
-                    width: 81px;
+                    width: 78px;
                     min-height: 48px;
                     border-right: solid 3px $main-color;
                 }
@@ -52,7 +52,7 @@
                         width: 64px;
                         margin-right: 32px;
                         &:first-of-type {
-                            margin-left: 563px;
+                            margin-left: 42vw;
                         }
                     }
                 }
@@ -130,3 +130,127 @@
 }
 
 
+@media( max-width: 1400px) {
+   .register {
+        .promo {
+            &-circle {
+                width: 68px;
+                height: 68px;
+                top: 215px;
+            }
+        }
+   }
+}
+
+@media( max-width: 992px) {
+    .register {
+        .promo {
+            height: 755px;
+            &-upper2 {
+                &-upperblock {
+                    &-first {
+                        width: 73px;
+                    }
+                    &-second {
+                        &-divider {
+                            &:nth-of-type(1) {
+                                margin-left: 30vw;
+                            }
+                        }
+                    }
+                }
+            }
+            .lower {
+                .promo {
+                    &-lower1 {
+                        height: 658px;
+                    }
+                    &-block {
+                        &-main {
+                            height: 567px;
+                            &-header {
+                                font-size: 48px;
+                            }
+                            &-subheader {
+                                font-size: 20px;
+                            }
+                        }
+                        &-lower2 {
+                            width: 74px;
+                        }
+                    }
+                    &-notifications {
+                        &-pointer {
+                            width: 110px;
+                            height: 41px;
+                        }
+                        &-text {
+                            padding-top: 26px;
+                            font-size: 16px;
+                            animation: 2s ease pointer-glimpse infinite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media( max-width: 768px) {
+    .register {
+        .promo {
+            &-lower1 {
+                display: none;
+            }
+            &-upper2 {
+                &-upperblock {
+                    &-first {
+                        width: 73px;
+                    }
+                    &-second {
+                        &-divider {
+                            &:nth-of-type(1) {
+                                margin-left: 20vw;
+                            }
+                        }
+                    }
+                }
+            }
+            &-circle {
+                left: 78%;
+            }
+            .lower {
+                .promo {
+                    &-block {
+                        &-main {
+                            padding-left: 20px;
+                            width: 100%;
+                            &-header {
+                                width: 100%;
+                            }
+                            &-subheader {
+                                width: 100%;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-block {
+                &-main {
+                    &-button {
+                        margin-top: 30px;
+                        width: 340px;
+                        height: 70px;
+                        border-radius: 150px;
+                        background-color: $main-color;
+                        color: white;
+                        font-size: 16px;
+                        transition: 2s all;
+                    }
+                }
+            }
+        }
+    }
+}

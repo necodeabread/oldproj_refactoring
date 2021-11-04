@@ -1,0 +1,59 @@
+@mixin design-card($x, $y) { 
+    box-shadow: 6px 6px 0 0 #7c1d19; 
+    border: solid 2px #7c1d19; 
+    background-color: #f4a59f;
+    z-index: 6; 
+    margin-left: 154px * $x;
+    margin-top: 32px * $y;
+    color: #7c1d19;
+}
+
+@mixin practical-card($x, $y) {
+    box-shadow: 6px 6px 0 0 #6c1a45; 
+    border: solid 2px #6c1a45; 
+    background-color: #e284a0;
+    z-index: 5; 
+    margin-left: 154px * $x; 
+    margin-top: 32px * $y; 
+    color: #6c1a45;
+}
+
+@mixin responsive-card($x, $y) {
+    box-shadow: 6px 6px 0 0 #945219; 
+    border: solid 2px #7c1d19; 
+    background-color: #f2ba89; 
+    z-index: 4; 
+    margin-left: 154px * $x; 
+    margin-top: 32px * $y; 
+    color: #945219;
+}
+
+@mixin handoff-card($x, $y) {
+    box-shadow: 6px 6px 0 0 #465b43; 
+    border: solid 2px #465b43; 
+    background-color: #cdeec8; 
+    z-index: 1; 
+    margin-left: 154px * $x; 
+    margin-top: 32px * $y; 
+    color: #465b43;
+}
+
+@mixin prototyping-card ($x, $y) {
+    box-shadow: 6px 6px 0 0 #3c2b84; 
+    border: solid 2px #3c2b84; 
+    background-color: #bbbffb; 
+    z-index: 2; 
+    margin-left: 154px * $x; 
+    margin-top: 32px * $y; 
+    color: #3c2b84;
+}
+
+@mixin workflow-card ($x, $y) {
+    box-shadow: 6px 6px 0 0 #090b37; 
+    border: solid 2px #090b37; 
+    background-color: #e8e9f1; 
+    z-index: 5; 
+    margin-left: 154px * $x; 
+    margin-top: 32px * $y; 
+    color: #090b37;
+}
