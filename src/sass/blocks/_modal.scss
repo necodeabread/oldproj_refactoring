@@ -1,0 +1,63 @@
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 101;
+    &_active {
+        display: block;
+    }
+    .modal {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background-color: white;
+        width: 80%;
+        height: 80%;
+        border: solid $main-color 10px;
+        border-radius: 24px;
+        &__wrapper {
+            padding: 50px;
+        }
+        &__header {
+            font-size: 32px;
+            font-weight: 700;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        &__form {
+            font-size: 28px;
+            font-weight: 700;
+            label {
+                display: block;
+                text-align: center;
+            }
+            input {
+                display: block;
+                width: 85%;
+                height: 60px;
+                border: solid 2px $main-color;
+                border-radius: 16px;
+                font-size: 24px;
+                padding-left: 15px;
+                margin: 0 auto; 
+                margin-bottom: 25px;
+            }
+        }
+        &__submit {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: 100px;
+            font-size: 32px;
+            letter-spacing: 8px;
+            font-weight: 900;
+            color: white;
+            background-color: $main-color;
+            border-radius: 200px;
+        }
+    }
+}

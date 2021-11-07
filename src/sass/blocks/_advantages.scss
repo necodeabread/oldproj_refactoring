@@ -106,5 +106,11 @@
         &__palette {
             width: 80%;
         }
+        &__subheader {
+            width: 676px;
+            &-text {
+                font-size: 22px;
+            }
+        }
     }
 }

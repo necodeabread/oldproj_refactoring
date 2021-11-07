@@ -12,20 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
 </head>
 <body>
+
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__wrapper">
+                <div class="modal__header">Let's fill in some info about you...</div>
+                <form enctype="multipart/form-data" method="post" class="modal__form" onsubmit="send(event, 'send.php')">
+                    <label for="name">Full name: </label>
+                    <input type="text" id="name" name="name"/>
+    
+                    <label for="email">Email: </label>
+                    <input type="mail" id="email" name="email"/>
+    
+                    <label for="number">Phone number:</label>
+                    <input type="number" id="number" name="number">
+    
+                    <button class="modal__submit">Submit!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="menu">
         <div class="container">
             <div class="menu__wrapper">
                 <div class="menu__join">
                     <div class="menu__join-text">Join the list</div>
                     <div class="menu__join-arrow">
-                        <object data="icons/arrow-right-thin.svg" type="image/svg+xml"></object>
+                        <img src="src/icons/arrow-right-thin.svg" type="image/svg+xml"></img>
                     </div>
-                    <form action="input-emails.php" class="form form_desktop">
+                    <form enctype="multipart/form-data" class="form form_desktop" onsubmit="send(event, 'send.php')">
                         <div class="label" for="email"></div>
-                        <input type="text" id="email" placeholder="Your@email.com">
+                        <input type="text" id="email" placeholder="Your@email.com" name="email">
                     </form>
                 </div>
                 <button class="menu__button_join">Join Now</button>
@@ -71,10 +93,10 @@
                             <div class="promo-block-main-subheader">
                                 Learn advanced design tactics with hands-on lessons delivered directly inside of Figma
                             </div>
-                            <form onsubmit="alert('submit!');return false" class="form form_big">
-                                <input type="text" id="candidate" placeholder="Your@email.com">
+                            <form enctype="multipart/form-data" onsubmit="send(event, 'send.php')" class="form form_big">
+                                <input type="text" id="candidate" placeholder="Your@email.com" name="email">
                                 <button>
-                                    <img src="icons/arrow_right_button.svg">
+                                    <img src="src/icons/arrow_right_button.svg">
                                 </button>
                             </form>
                             <div class="promo-notifications">
@@ -240,18 +262,18 @@
                 Currently there are ~500 designers learning together in Figma.
                 Enter your email below if you'd like to join them 👇
             </div>
-            <form onsubmit="alert('submit!');return false" class="form form_big">
-                <input type="text" id="candidate-another" placeholder="Your@email.com">
+            <form enctype="multipart/form-data" onsubmit="send(event, 'send.php')" class="form form_big">
+                <input type="text" id="candidate-another" placeholder="Your@email.com" name="email">
                 <button>
-                    <img src="icons/arrow_right_button.svg" alt="submit button">
+                    <img src="src/icons/arrow_right_button.svg" alt="submit button">
                 </button>
             </form>
             <div class="notify__links">
                 <div class="notify__links__item">
-                    <a href="#"><img src="icons/twttrnoborder.svg" alt="twttricon"></a>
+                    <a href="#"><img src="src/icons/twttrnoborder.svg" alt="twttricon"></a>
                 </div>
                 <div class="notify__links__item">
-                    <a href="#"><img src="icons/chain.svg" alt="chain"></a>
+                    <a href="#"><img src="src/icons/chain.svg" alt="chain"></a>
                 </div>
             </div>
             <div class="notify__created">Created by Ridd</div>
@@ -259,6 +281,7 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

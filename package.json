@@ -1,0 +1,23 @@
+{
+  "name": "academy",
+  "version": "1.0.0",
+  "description": "refactoring example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/necodeabread/oldproj_refactoring.git"
+  },
+  "author": "Hlib Drobinko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/necodeabread/oldproj_refactoring/issues"
+  },
+  "homepage": "https://github.com/necodeabread/oldproj_refactoring#readme",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

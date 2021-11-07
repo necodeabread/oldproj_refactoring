@@ -32,7 +32,7 @@
     box-shadow: 6px 6px 0 0 #465b43; 
     border: solid 2px #465b43; 
     background-color: #cdeec8; 
-    z-index: 1; 
+    z-index: 3; 
     margin-left: 154px * $x; 
     margin-top: 32px * $y; 
     color: #465b43;
@@ -52,7 +52,7 @@
     box-shadow: 6px 6px 0 0 #090b37; 
     border: solid 2px #090b37; 
     background-color: #e8e9f1; 
-    z-index: 5; 
+    z-index: 1; 
     margin-left: 154px * $x; 
     margin-top: 32px * $y; 
     color: #090b37;
